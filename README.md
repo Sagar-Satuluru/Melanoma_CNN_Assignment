@@ -6,21 +6,12 @@ Develop a CNN-based model for melanoma detection. Melanoma causes 75% of skin ca
 
 - [General Info](#general-information)
 - [Model Architecture](#model-architecture)
-- [Model Summary](#model-summary)
-- [Model Evaluation](#model-evaluation)
 - [Technologies Used](#technologies-used)
-- [Acknowledgements](#acknowledgements)
 - [Collaborators](#collaborators)
 
 ## General Information
 
 The dataset contains 2,357 malignant and benign skin lesion images from the International Skin Imaging Collaboration (ISIC). Images are evenly distributed across categories. The Augmentor Python package was used to balance class representation through data augmentation.
-
-![datasetgraph](./class_distribution.png)
-
-## Skin Cancer Types
-
-![skincancertypes](./skin_cancer_types.png)
 
 The goal is to classify skin cancer types accurately.
 
@@ -36,6 +27,13 @@ The goal is to classify skin cancer types accurately.
 8. **Output Layer**: Outputs class probabilities based on `target_labels`.
 9. **Model Compilation**: Uses Adam optimizer and Sparse Categorical Crossentropy loss for multi-class classification.
 10. **Training**: Runs for 50 epochs with `ModelCheckpoint` (saving best model) and `EarlyStopping` (stopping if validation accuracy plateaus).
+
+## Model Summary
+
+ Total params: 11,969,405 (45.66 MB)
+ Trainable params: 3,989,801 (15.22 MB)
+ Non-trainable params: 0 (0.00 B)
+ Optimizer params: 7,979,604 (30.44 MB)
 
 ## Technologies Used
 
